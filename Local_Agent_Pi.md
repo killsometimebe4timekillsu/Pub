@@ -1,16 +1,16 @@
-1. install pi
+1. install pi. 
 `curl -fsSL https://pi.dev/install.sh | sh`
 
-2. install ollama
+2. install ollama. 
 `curl -fsSL https://ollama.com/install.sh | sh`
 
-3. Start ollama
+3. Start ollama. 
 `ollama serve`
 
-4. validate
+4. validate. 
 `curl http://localhost:11434`
 
-5. download the model(s)
+5. download the model(s) aka pick your poison. 
 `ollama pull <model>`
 
 MODELNAMES
@@ -18,10 +18,10 @@ qwen3:8b
 llama3.1:8b
 deepseek-coder-v2
 
-6. create config dir
+6. create config dir. 
 `mkdir -p ~/.pi/agent`
 
-7. create pi config
+7. create pi config. 
 `<editor> ~/.pi/agent/models.json`
 
 ```
@@ -39,10 +39,10 @@ deepseek-coder-v2
 }
 ```
 
-9. Start Pi:
+9. Start Pi:  
 `pi`
 
-10. In Pi, type:
+10. In Pi, type:  
 `/model`
 
 You should see the ollama provider and your local model available. 
