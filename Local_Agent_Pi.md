@@ -1,4 +1,4 @@
-1. install pi. 
+1. install pi. <p>
 `curl -fsSL https://pi.dev/install.sh | sh`
 
 2. install ollama. 
