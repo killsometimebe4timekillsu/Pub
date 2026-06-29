@@ -18,7 +18,6 @@ MODEL examples
 - llama3.1:8b
 - deepseek-coder-v2
 - qwen2.5-coder:7b
-- llama3.1:8b
 - deepseek-r1:8b
 
 6. create config dir.  <p>
