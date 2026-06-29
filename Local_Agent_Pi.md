@@ -13,10 +13,13 @@
 5. download the model(s) aka pick your poison. 
 `ollama pull <model>`
 
-MODELNAMES
-qwen3:8b
-llama3.1:8b
-deepseek-coder-v2
+MODEL examples
+- qwen3:8b
+- llama3.1:8b
+- deepseek-coder-v2
+- qwen2.5-coder:7b
+- llama3.1:8b
+- deepseek-r1:8b
 
 6. create config dir. 
 `mkdir -p ~/.pi/agent`
@@ -31,13 +34,26 @@ deepseek-coder-v2
       "baseUrl": "http://localhost:11434/v1",
       "api": "openai-completions",
       "apiKey": "ollama",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false
+      },
       "models": [
-        { "id": "qwen3:8b" } # Add more if needed
+        {
+          "id": "qwen2.5-coder:7b"
+        },
+        {
+          "id": "llama3.1:8b"
+        },
+        {
+          "id": "deepseek-r1:8b"
+        }
       ]
     }
   }
 }
 ```
+
 
 9. Start Pi:  
 `pi`
